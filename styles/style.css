@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    color: rgb(253, 255, 254);
+    display: inline-block;
+    padding: 5px;
+    margin-left: 50px;
+    font-size: 1em;
+
+}
+
+ul {
+    display: inline;
+}
+
+    ul > li {
+        display: inline-block;
+    }
+
+        ul > li > a {
+            font-size: 1.5em;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+#panel {
+    display: none;
+}
+
+li:hover {
+    border-bottom: 0.5px solid #fff;
+    border-radius: 5px;
+}
+
+h1:hover {
+    border-bottom: 0.5px solid #fff;
+    border-radius: 5px;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    position: fixed;
+    z-index: 1;
+}
+
+.buttons {
+    position: fixed;
+    padding: 530px 250px 100px 400px;
+}
+
+.btn {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 5px;
+    padding: 7px 28px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#menu {
+    font-size: 1.6em;
+    font-weight: normal;
+}
+
+/* #btnVideo{
+            position: fixed;
+            z-index: 1;
+            margin: 500px 300px 100px 400px;
+        }
+        #btnVideo{
+            position: fixed;
+            z-index: 1;
+            margin: 500px 300px 100px 500px;
+        } */
