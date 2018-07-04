@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>City_Land</title>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <script>
+        $(document).ready(function () {
+            $("#menu").click(function () {
+                $("#panel").slideToggle("fast");
+            });
+        });
+
+        $("#btnStop").click(function(){
+        $("#myVideo").stop();
+    });
+    </script>
+    
+</head>
+
+<body>
+    <header>
+            <video autoplay muted loop id="myVideo">
+                    <source src="./videos/home_video.mp4" type="video/mp4">
+                   <span><button class="btnFilm">watch the film</button></span>
+                  </video>
+
+                  <div class="container">
+                        <h1 id="menu">Menu</h1>
+                        <div id="panel">
+                            <ul>
+                                <li class="active"><a href="./Lands/land.html">Land</a></li>
+                                <li><a href="./Architechtures/Architecture.html">Architechture</a></li>
+                                <li><a href="./Interiors/interiors.html">Interiors</a></li>
+                                <li><a href="#">Living</a></li>                                
+                                <li><a href="./contacts.html">Contacts</a></li>
+                                  
+                            </ul>
+                        </div>
+                      </div>
+
+                      <div class="buttons">
+                          <a href="./videos/home_video.mp4" class="btn btn1">Watch the Film</a>
+                          <a href="./Home.html" id="btnStop"class="btn btn2">Enter the site</a>
+                      </div>
+
+    </header>
+    
+
+      
+
+
+
+            <script>
+                var video = document.getElementById("myVideo");
+                var btn = document.getElementById("myBtn");
+                
+                function myFunction() {
+                  if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                  } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                  }
+                }
+                </script>
+    
+</body>
+
+</html>

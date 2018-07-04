@@ -4173,7 +4173,7 @@ ul > li {
 }
 
     ul > li > a {
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
         padding: 10px;
         text-decoration: none;
         color: #fff;
@@ -4184,7 +4184,7 @@ li:hover {
     border-radius: 5px;
 }
 
-h1:hover {
+#menu h1:hover {
     border-bottom: 0.5px solid #fff;
     border-radius: 5px;
 }
