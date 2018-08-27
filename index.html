@@ -15,50 +15,45 @@
             });
         });
 
-        $("#btnStop").click(function(){
-        $("#myVideo").stop();
-    });
+        $("#btnStop").click(function () {
+            $("#myVideo").stop();
+        });
     </script>
-    
+
 </head>
 
 <body>
-    <header>
-            <video autoplay muted loop id="myVideo">
-                    <source src="./videos/home_video.mp4" type="video/mp4">
-                   <span><button class="btnFilm">watch the film</button></span>
-                  </video>
+    <div class="container">
+        <h1 id="menu">Menu</h1>
+        <div id="panel">
+            <ul>
+                <li class="active"><a href="./Lands/land.html">Land</a></li>
+                <li><a href="./Architechtures/Architecture.html">Architechture</a></li>
+                <li><a href="./Interiors/interiors.html">Interiors</a></li>
+                <li><a href="#">Living</a></li>
+                <li><a href="./contacts.html">Contacts</a></li>
 
-                  <div class="container">
-                        <h1 id="menu">Menu</h1>
-                        <div id="panel">
-                            <ul>
-                                <li class="active"><a href="./Lands/land.html">Land</a></li>
-                                <li><a href="./Architechtures/Architecture.html">Architechture</a></li>
-                                <li><a href="./Interiors/interiors.html">Interiors</a></li>
-                                <li><a href="#">Living</a></li>                                
-                                <li><a href="./contacts.html">Contacts</a></li>
-                                  
-                            </ul>
-                        </div>
-                      </div>
+            </ul>
+        </div>
+    </div>
 
-                      <div class="buttons">
-                          <a href="./videos/home_video.mp4" class="btn btn1">Watch the Film</a>
-                          <a href="./Home.html" id="btnStop"class="btn btn2">Enter the site</a>
-                      </div>
+    <div>
+        <video autoplay muted loop id="myVideo">
+            <source src="./videos/home_video.mp4" type="video/mp4">
+            <span>
+                <button class="btnFilm">watch the film</button>
+            </span>
+        </video>
+    </div>
+    <div class="buttons">
+        <a href="./videos/home_video.mp4" class="btn1" con>Watch the Film</a>
+        <a href="./Home.html" id="btnStop" class="btn2">Enter the site</a>
+    </div>
 
-    </header>
-    
-
-      
-
-
-
-            <script>
+    <script>
                 var video = document.getElementById("myVideo");
                 var btn = document.getElementById("myBtn");
-                
+
                 function myFunction() {
                   if (video.paused) {
                     video.play();
@@ -68,8 +63,7 @@
                     btn.innerHTML = "Play";
                   }
                 }
-                </script>
-    
+    </script>
 </body>
 
 </html>

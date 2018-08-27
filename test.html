@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        #myVideo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            height: auto;
+            z-index: -99;
+        }
+
+        .buttons {
+            position: fixed;
+            padding: 530px 250px 100px 400px;
+            bottom: 0;
+            color: aliceblue;
+        }
+
+        .btn1 {
+            color: aliceblue;
+        }
+
+        .btn2 {
+            color: aliceblue;
+        }
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            .buttons {
+                font-size: 20px;
+                position: fixed;
+                padding: 100px 0px 100px 220px;
+                bottom: 0;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .buttons {
+                font-size: 20px;
+                position: fixed;
+                padding: 0px 0px 100px 200px;
+                bottom: 0;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .buttons {
+                font-size: 25px;
+                position: fixed;
+                padding: 0px 0px 100px 250px;
+                bottom: 0;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .buttons {
+                font-size: 35px;
+                position: fixed;
+                padding: 0px 0px 100px 280px;
+                bottom: 0;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .buttons {
+                font-size: 35px;
+                position: fixed;
+                padding: 100px 30px 100px 385px;
+                bottom: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <video autoplay muted loop id="myVideo">
+        <source src="./videos/home_video.mp4" type="video/mp4">
+        <span>
+            <button class="btnFilm">watch the film</button>
+        </span>
+    </video>
+</div>
+<div class="buttons">
+    <a href="./videos/home_video.mp4" class="btn1" con>Watch the Film</a>
+    <a href="./Home.html" id="btnStop" class="btn2">Enter the site</a>
+</div>
+
+    <style>
+    </style>
+</body>
+</html>
